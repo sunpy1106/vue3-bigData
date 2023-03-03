@@ -56,3 +56,12 @@ export function selectYearValue(params) {
 }
 
 
+
+/**
+ * 获取系统接入信息
+ * @param {null}
+ * @returns{ newComponentCount, dataTotalSize,dataRecordCount,peakTPS}
+ */
+export function getSystemData() {
+  return request.post("/system/getSystemData", {});
+}
