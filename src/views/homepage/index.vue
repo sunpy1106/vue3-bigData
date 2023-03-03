@@ -4,8 +4,8 @@
       <z-col :span="7">
         <div class="echartList">
           <div class="chart-item">
-            <box-container :boxTitle="year + '年销售额度排名'">
-              <city-count />
+            <box-container :boxTitle="新一代组件当日实时采集统计">
+              <system-stream-chart> </system-stream-chart>
             </box-container>
           </div>
           <div class="chart-item">
@@ -65,10 +65,12 @@ import {
 } from "./components";
 import useResize from "@/componentApi/useResize.js";
 import { ref } from "vue";
+import SystemStreamChart from "@/views/homepage/components/systemStreamChart.vue";
 
 export default {
   name: "homepage",
   components: {
+    SystemStreamChart,
     ZRow,
     ZCol,
     boxContainer,

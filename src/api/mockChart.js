@@ -54,3 +54,5 @@ export function selectOtherData(params) {
 export function selectYearValue(params) {
   return request.post("/liquid/selectYearValue", params);
 }
+
+
