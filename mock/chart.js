@@ -218,8 +218,8 @@ module.exports = [
       return {
         code: 200,
         data:{
-          newComponentSize: '100',
-          dataTotalSize: 10000000+ (Math.random() * 10000000).toFixed(0),
+          newComponentCount: '100',
+          dataTotalSize: 100000+ (Math.random() * 10000000).toFixed(0),
           dataRecordCount:  10000+ (Math.random() * 10000).toFixed(0),
           peakTPS: 1000+ (Math.random() * 1000).toFixed(0),
 

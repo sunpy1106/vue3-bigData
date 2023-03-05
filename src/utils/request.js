@@ -115,7 +115,7 @@ http.get = function(url, params) {
  */
 
 http.post = function(url, params) {
-  console.log(params)
+  
   return new Promise((resolve, reject) => {
     service
       .post(url, stringify(params))
