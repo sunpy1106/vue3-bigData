@@ -10,6 +10,7 @@
 </template>
 
 <script>
+import { setgroups } from "process";
 import fourAngel from "../fourAngel/index";
 export default {
   name: "boxContainer",
@@ -22,7 +23,12 @@ export default {
   components: {
     fourAngel,
   },
+  
+
 };
+//从父组件获取boxTitle信息并显示
+
+
 </script>
 
 <style lang="scss" scoped>

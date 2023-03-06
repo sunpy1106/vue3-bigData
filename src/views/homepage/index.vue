@@ -4,7 +4,7 @@
       <z-col :span="7">
         <div class="echartList">
           <div class="chart-item">
-            <box-container :boxTitle="新一代组件当日实时采集统计">
+            <box-container :boxTitle="systemStreamChartTitle">
               <system-stream-chart> </system-stream-chart>
             </box-container>
           </div>
@@ -85,9 +85,11 @@ export default {
     countTo,
   },
   setup(props, context) {
+    const systemStreamChartTitle= ref("新一代组件当日实时采集统计")
     const { year, sum } = useResize();
 
     return {
+      systemStreamChartTitle,
       year,
       sum,
     };
