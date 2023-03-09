@@ -5,12 +5,12 @@
         <div class="echartList">
           <div class="chart-item">
             <box-container :boxTitle="systemStreamChartTitle">
-              <system-stream-chart> </system-stream-chart>
+              <system-stream-chart />
             </box-container>
           </div>
           <div class="chart-item">
-            <box-container :boxTitle="year + '年销售种类占比'">
-              <type-count />
+            <box-container :boxTitle="systemSizeTopChartTitle">
+              <streamSizeTopChart />
             </box-container>
           </div>
           <div class="chart-item">
@@ -67,10 +67,13 @@ import useResize from "@/componentApi/useResize.js";
 import { ref } from "vue";
 import SystemStreamChart from "@/views/homepage/components/systemStreamChart.vue";
 
+import streamSizeTopChart from "@/views/homepage/components/streamSizeTopChart.vue";
+
 export default {
   name: "homepage",
   components: {
     SystemStreamChart,
+    streamSizeTopChart,
     ZRow,
     ZCol,
     boxContainer,
@@ -86,10 +89,12 @@ export default {
   },
   setup(props, context) {
     const systemStreamChartTitle= ref("新一代组件当日实时采集统计")
+    const systemSizeTopChartTitle= ref("当日采集数据量TOP10")
     const { year, sum } = useResize();
 
     return {
       systemStreamChartTitle,
+      systemSizeTopChartTitle,
       year,
       sum,
     };

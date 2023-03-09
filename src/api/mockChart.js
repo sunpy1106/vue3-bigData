@@ -66,3 +66,13 @@ export function getSystemData() {
   return request.post("/system/getSystemData", {});
 }
 
+/**
+ * 获取系统当日接入数据量Top 10
+ * @param {null}
+ * @returns {Array}
+ */
+
+export function getSizeTop10Daily(){
+  return request.post("/system/getSizeTop10Daily",{})
+}
+

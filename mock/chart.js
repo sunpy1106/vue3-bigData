@@ -226,5 +226,66 @@ module.exports = [
         }
       }
     }
+  },
+  {
+    url: "/system/getSizeTop10Daily",
+    type: "post",
+    response: ()=>{
+      return {
+        code: 200,
+        data: [
+          {
+            name: "组件1",
+            value: (Math.random() * 70 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件2",
+            value: (Math.random() * 170 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件3",
+            value: (Math.random() * 270 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件4",
+            value: (Math.random() * 370 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件5",
+            value: (Math.random() * 470 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件6",
+            value: (Math.random() * 570 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件7",
+            value: (Math.random() * 570 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件8",
+            value: (Math.random() * 770 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件9",
+            value: (Math.random() * 870 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+          {
+            name: "组件10",
+            value: (Math.random() * 970 + 20).toFixed(2),
+            other: (Math.random() * 50).toFixed(2),
+          },
+        ]
+      }
+    }
   }
 ];
